@@ -22,7 +22,7 @@ const Register = ({setUser}) => {
     event.preventDefault();
 
     try {
-      const resp = await Axios.post('/api/register', inputs);
+      const resp = await Axios.post('/api/Register', inputs);
 
       if (resp.status === 200) {
         setUser(resp.data.user);
